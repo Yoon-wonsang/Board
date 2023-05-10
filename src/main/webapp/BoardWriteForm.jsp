@@ -1,5 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,41 +6,41 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h2> °Ô½Ã±Û ¾²±â </h2>
+	<h2> ê²Œì‹œê¸€ ì“°ê¸° </h2>
 	
 	<center>
 		<form action = "BoardWriteProc.jsp" method = "post">
 			<table	width ="600" border = "1" bordercolor = "gray" bgcolor = "skyblue" >
 				<tr height="40">
-						<td align = "center" width ="150">ÀÛ¼ºÀÚ</td>
+						<td align = "center" width ="150">ìž‘ì„±ìž</td>
 						<td width="450"><input type= "text" name = "write" size = "60"></td>
 				</tr>
 				
 				<tr height="40">
-						<td align = "center" width ="150">Á¦¸ñ</td>
+						<td align = "center" width ="150">ì œëª©</td>
 						<td width="450"><input type= "text" name = "subject" size = "60"></td>
 				</tr>
 				
 				<tr height="40">
-						<td align = "center" width ="150">ÀÌ¸ÞÀÏ</td>
+						<td align = "center" width ="150">ì´ë©”ì¼</td>
 						<td width="450"><input type= "email" name = "email" size = "60"></td>
 				</tr>
 				
 				<tr height="40">
-						<td align = "center" width ="150">ºñ¹Ð ¹øÈ£</td>
+						<td align = "center" width ="150">ë¹„ë°€ ë²ˆí˜¸</td>
 						<td width="450"><input type= "password" name = "password" size = "60"></td>
 				</tr>
 				
 				<tr height="40">
-						<td align = "center" width ="150">±Û ³»¿ë</td>
+						<td align = "center" width ="150">ê¸€ ë‚´ìš©</td>
 						<td width="450"><textarea rows= "10" cols = "60" name = "content"></textarea></td>
 				</tr>
 				
 				<tr height="40">
 						<td align = "center" colspan = "2">
-							<input type= "submit" value="±Û¾²±â">&nbsp;&nbsp;
-							<input type= "reset"  value="´Ù½Ã ÀÛ¼º">&nbsp;&nbsp;
-							<button onclick="location.href='BoardList.jsp'">ÀüÃ¼ °Ô½Ã±Û º¸±â</button>
+							<input type= "submit" value="ê¸€ì“°ê¸°">&nbsp;&nbsp;
+							<input type= "reset"  value="ë‹¤ì‹œ ìž‘ì„±">&nbsp;&nbsp;
+							<button onclick="location.href='BoardList.jsp'">ì „ì²´ ê²Œì‹œê¸€ ë³´ê¸°</button>
 						</td>
 				</tr>
 			</table>		

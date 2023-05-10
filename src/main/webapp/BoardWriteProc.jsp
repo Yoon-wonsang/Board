@@ -1,5 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ page import="model.BoardDAO"%>
 <%@ page import="model.BoardBean"%>
 <!DOCTYPE html>
@@ -13,20 +12,20 @@
 		request.setCharacterEncoding("UTF-8");
 	%>
 
-	<!-- °Ô½Ã±Û ÀÛ¼ºÇÑ µ¥ÀÌÅÍ¸¦ ÇÑ¹ø¿¡ ÀÐ¾î µå¸²  -->
+	<!-- ê²Œì‹œê¸€ ìž‘ì„±í•œ ë°ì´í„°ë¥¼ í•œë²ˆì— ì½ì–´ ë“œë¦¼  -->
 		<jsp:useBean id = "boardbean" class= "model.BoardBean">
 		<jsp:setProperty name="boardbean" property = "*" />
 	</jsp:useBean>
 	
 
 	<%
-		//µ¥ÀÌÅÍ º£ÀÌ½º ÂÊÀ¸·Î ºó Å¬·¡½º¸¦ ³Ñ°ÜÁÜ
+		//ë°ì´í„° ë² ì´ìŠ¤ ìª½ìœ¼ë¡œ ë¹ˆ í´ëž˜ìŠ¤ë¥¼ ë„˜ê²¨ì¤Œ
 		BoardDAO bdao = new BoardDAO();
 	
-		//µ¥ÀÌÅÍ ÀúÀå ¸Þ¼Òµå¸¦ È£Ãâ
+		//ë°ì´í„° ì €ìž¥ ë©”ì†Œë“œë¥¼ í˜¸ì¶œ
 		bdao.insertBoard(boardbean);
 		
-		//°Ô½Ã±Û ÀúÀåÈÄ ÀüÃ¼ °Ô½Ã±Û º¸±â
+		//ê²Œì‹œê¸€ ì €ìž¥í›„ ì „ì²´ ê²Œì‹œê¸€ ë³´ê¸°
 		//response.sendRedirect("BoardList.jsp");
 	%>
 </body>
